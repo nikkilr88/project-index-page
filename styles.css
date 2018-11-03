@@ -47,6 +47,9 @@ body {
   background: #222;
   border-radius: 3px;
   color: #999;
+  cursor: pointer;
+  line-height: 10px;
+  padding: 2px;
 }
 
 .search-icon {
@@ -118,6 +121,10 @@ span.color {
   padding: 0 5px;
 }
 
+.arrow-right {
+  opacity: 0.3;
+}
+
 .red {
   background: rgb(219, 38, 38);
 }
@@ -128,6 +135,20 @@ span.color {
 
 .green {
   background: rgb(59, 182, 59);
+}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.info:hover {
+  opacity: 1;
 }
 
 /* ===========animations============ */
