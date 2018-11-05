@@ -30,36 +30,48 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   opacity: 1;
   transform: scale(0);
-  animation: popupWindow 0.5s 0.5s forwards ease-in-out;
+  animation: popupWindow 0.4s 0.3s forwards ease-in-out;
 }
 
 /* ===========statusbar============ */
 .status-bar {
   padding: 10px;
-  width: 100%;
   max-width: 100%;
   flex: 0 0 100%;
   background: #1b1b1b;
 }
-.status-bar span:not(.color) {
+
+.status-bar .status-nav {
+  display: flex;
+  font-size: 15px;
   margin-top: 10px;
-  display: inline-block;
-  background: #222;
+}
+
+.status-bar .status-nav .material-icons {
+  font-size: 22px;
+}
+
+.status-bar span:not(.color) {
+  margin: 5px 2px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   border-radius: 3px;
+  background: #222;
   color: #999;
   cursor: pointer;
-  line-height: 10px;
-  padding: 2px;
 }
 
 .search-icon {
-  float: right;
+  margin-left: auto !important;
 }
 
+/* ===========sidebar============ */
 .sidebar {
+  padding: 15px 0;
   background: #2b2b2b;
   color: #999;
-  padding: 15px 0;
   flex: 0 0 30%;
 }
 
@@ -135,20 +147,6 @@ span.color {
 
 .green {
   background: rgb(59, 182, 59);
-}
-
-.info {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: #fff;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.info:hover {
-  opacity: 1;
 }
 
 /* ===========animations============ */
